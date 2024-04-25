@@ -1,0 +1,16 @@
+/***************Reinicio de estilos***************/
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing:  border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/***************Variables de Colores***************/
+:root{
+    --negro: #141010;
+    --rosa: #f11e73; 
+    --blanco: #efecea; 
+}

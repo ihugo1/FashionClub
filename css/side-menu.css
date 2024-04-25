@@ -1,0 +1,19 @@
+/***************SideMenu***************/
+.side-menu{
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+
+    position: absolute;
+    top: 0;
+    left: -70%;
+
+    display: flex; flex-direction: column;
+    justify-content: space-around;
+
+    background-color: var(--negro);
+    transition: left 0.3s ease;
+}
+.side-menu-active{
+    left: 0;
+}
