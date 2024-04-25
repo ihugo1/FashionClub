@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionClubSV | Catálogo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <!--Banner-->
+    <div class="header">
+        <!--NavBar-->
+        <nav class="nav-bar">
+            <a class="nav-bar__link" href="/index.html">Inicio</a>
+            <a class="nav-bar__link" href="#">Sucursales</a>
+            <a class="nav-bar__link" href="#">Sobre Nosotros</a>
+            <a class="nav-bar__link" href="#">Ofertas Especiales</a>
+        </nav> 
+        <!--CatalogueTitle-->   
+        <div class="title">
+            <h1 class="catalogue-title">Catálogo</h1>
+        </div>
+        <!--SideMenuBtn-->
+        <button class="header__open-side-menu-btn">Menú</button>
+        <!--Background-->
+        <img class="header__img" src="/img/catalogue/catalogo-banner.png">
+    </div>
+
+    <!--SideMenu-->
+    <div class="side-menu">
+        <a class="side-menu__link" href="#">Catálogo</a>
+        <a class="side-menu__linkk" href="#">Sucursales</a>
+        <a class="side-menu__link" href="#">Sobre Nosotros</a>
+        <a class="side-menu__link" href="#">Ofertas Especiales</a>
+        <button class="side-menu__close-side-menu-btn">Cerrar</button>
+    </div>    
+
+    <div class="filter-bar">
+        <label for="options">Filtrar por prenda/accesorio</label>
+        <form action="#">
+            <select name="options" id="clothes-options">
+                <option value="1">Camisas</option>
+                <option value="2">Pantalones</option>
+                <option value="3">Gorros</option>
+                <option value="4">Maquillaje</option>
+                <option value="5">Accesorios</option>
+                <option value="6">Chaquetas</option>
+                <option value="7">Vestidos</option>
+            </select>
+            <button>Filtrar</button>
+        </form>
+    </div>
+
+    <div class="products-container">
+    </div>
+
+    <script src="/js/catalogue-data-base.js"></script>
+    <script src="/js/side-menu..js"></script> 
+</body>
+</html>

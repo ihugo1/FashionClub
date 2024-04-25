@@ -1,0 +1,102 @@
+/***************HomePage***************/
+.home-page-container{
+    width: 100vw;
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    background-color: var(--negro);
+}
+.home-page-left{
+    width: 75%;
+
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+.home-page__item{
+    width: 95%;
+    height: 200px;
+
+    position: relative;
+    margin-bottom: 30px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    transition: height 0.3s ease, width 0.3s ease;
+}
+.home-page__item:hover{
+    height: 250;
+    width: 100%;
+}
+.home-page__item::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.home-page__item:hover::after {
+    background-color: rgba(0, 0, 0, 0.4); 
+    cursor: pointer;
+}
+.home-page__item-bg{
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    position: absolute;
+    object-position: top;
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+.home-page__item-text{
+    z-index: 1;
+
+    text-align: center;
+    font-size: 24px;
+    color: var(--blanco);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+}
+.home-page__item-btn{
+    display: none;
+    z-index: 1;
+
+    font-size: 18px;
+    border-style: none;
+    background-color: #f11e729c;
+    color: var(--blanco);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); 
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.home-page__item-btn:hover {
+    z-index: 1;
+    cursor: pointer;
+    background-color: #f11e73;
+}
+.home-page-right{
+    width: 20%;
+    background-color: whitesmoke;
+}
+/***************Responsivo***************/
+@media (max-width: 768px){
+    .home-page-right{
+        display: none;
+    }
+    .home-page-container{
+        padding: 10% 2%; 
+        flex-direction: column-reverse;
+    }
+    .home-page-left{
+        width: 100%;
+    }
+}
