@@ -38,24 +38,26 @@
 
     <div class="filter-bar">
         <label for="options">Filtrar por prenda/accesorio</label>
-        <form action="#">
-            <select name="options" id="clothes-options">
-                <option value="1">Camisas</option>
-                <option value="2">Pantalones</option>
-                <option value="3">Gorros</option>
-                <option value="4">Maquillaje</option>
-                <option value="5">Accesorios</option>
-                <option value="6">Chaquetas</option>
-                <option value="7">Vestidos</option>
+        <form action="#" class="clothes-menu">
+            <select name="options" class="clothes-options" id="filter-menu">
+                <option value="all">Todo</option>
+                <option value="t-shirt">Camisas</option>
+                <option value="pants">Pantalones</option>
+                <option value="jacket">Chaquetas</option>
+                <option value="hat">Gorros</option>
+                <option value="makeup">Maquillaje</option>
+                <option value="necklace">Accesorios</option>
+                <option value="dress">Vestidos</option>
             </select>
-            <button>Filtrar</button>
         </form>
+        <button class="filter-bar__btn" id="filter-bar__btn">Filtrar</button>
     </div>
 
-    <div class="products-container">
+    <div class="products-container" id="products-container">
     </div>
 
-    <script src="/js/catalogue-data-base.js"></script>
+    <script src="/js/data-base.js"></script>
+    <script src="/js/filter-products.js"></script>
     <script src="/js/side-menu..js"></script> 
 </body>
 </html>
