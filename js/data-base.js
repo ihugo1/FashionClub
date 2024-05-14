@@ -1,11 +1,12 @@
-products = [
+productsDataBase = [
     {
         id: 1, 
         type: "t-shirt", 
         name: "Camisa Yoohyeon", 
         price: 15.99, 
         units: 20, 
-        imgSrc: "/img/catalogue/camisa.png"
+        imgSrc: "/img/catalogue/camisa.png",
+        description: "bal bla kasdk afhlsafak ñfaskfafk lkfsa flak ñfkasflka ñsakflf "
     },
     {
         id: 2, 

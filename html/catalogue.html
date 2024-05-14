@@ -36,6 +36,7 @@
         <button class="side-menu__close-side-menu-btn">Cerrar</button>
     </div>    
 
+    <!--FilterBar-->
     <div class="filter-bar">
         <label for="options">Filtrar por prenda/accesorio</label>
         <form action="#" class="clothes-menu">
@@ -53,11 +54,48 @@
         <button class="filter-bar__btn" id="filter-bar__btn">Filtrar</button>
     </div>
 
+    <!--ProductsContainer-->
     <div class="products-container" id="products-container">
     </div>
 
+    <!--ProductsModal-->
+    <div class="product-modal" id="product-modal">
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>7777-7777</p>
+            <p>2222-2222</p>
+            <p>correo@email.com</p>
+        </div>
+        <div class="footer-middle">
+            <h1 class="logo-footer-part-1">Fashion</h1>
+            <h1 class="logo-footer-part-2">Club</h1>
+        </div>
+        <div class="footer-right">
+            <p>Local 1: Dirección</p>
+            <p>Local 2: Dirección</p>
+            <p>Local 3: Dirección</p>
+        </div>
+    </footer>    
+
+    <!--ShoppingCartBtn-->
+    <button class="shopping-cart-btn-open" onclick="toggleShoppingCart()">Carrito</button>
+
+    <!--ShoppingCartSide-->
+    <div class="shopping-cart" id="shopping-cart">
+        <p>Mi carrito:</p>
+        <div id="shopping-cart-list"></div>
+        <p id="shopping-cart-total"></p>
+        <button id="shopping-cart-btn-close" onclick="toggleShoppingCart()">Cerrar Carrito</button>
+    </div>
+
+    <!--Scripts-->
     <script src="/js/data-base.js"></script>
     <script src="/js/filter-products.js"></script>
+    <script src="/js/buy-product.js"></script>
+    <script src="/js/products-modal.js"></script>
     <script src="/js/side-menu..js"></script> 
 </body>
 </html>

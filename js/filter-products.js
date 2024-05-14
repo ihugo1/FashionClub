@@ -3,36 +3,37 @@ let filterMenu = document.getElementById("filter-menu");
 let filterBtn = document.getElementById("filter-bar__btn");
 let selectedOption = "all";
 
-function filterProducts(array) {
+function filterProducts() {
   productsContainer.innerHTML = "";
   selectedOption = filterMenu.value;
   let productsToFilter;
   if (selectedOption == "all") {
-    productsToFilter = array;
+    productsToFilter = productsDataBase;
   } else {
-    productsToFilter = array.filter(function (pito) {
+    productsToFilter = productsDataBase.filter(function (pito) {
       return pito.type == selectedOption;
     });
   }
   for (product of productsToFilter) {
-    productsContainer.innerHTML += `
-        <div class="product">
-            <img class="product__img" src="${product.imgSrc}">
-            <p class="product__name">${product.name}</p>
-            <p class="product__price">${product.price}</p>
-            <p class="product__units">Disponinbles: ${product.units}</p>
-            <button class="product__buy-btn" onclick="buyItem(${product.id})">
-                Agregar al carrito
-            </button>
-            <button class="product__buy-btn" onclick="showModal(${product.id})">
-                Info
-            </button>
-        </div>
-        `;
+    productsContainer.innerHTML += `        
+    <div class="product">
+      <img class="product__img" src="${product.imgSrc}">
+      <div class="product-info">
+        <p class="product__name">${product.name}</p>
+        <p class="product__price">${product.price}</p>
+        <p class="product__units">Disponinbles: ${product.units}</p>
+      </div>
+      <div class="product__btns">
+        <button class="product__buy-btn" onclick="buyProduct(${product.id})">Agregar al carrito</button>
+        <button class="product__info-btn" onclick="showModal(${product.id})">Info</button>
+      </div>
+    </div>
+    `;
   }
 }
 
-filterProducts(products);
+
+filterProducts();
 filterBtn.addEventListener("click", function(){
-    filterProducts(products);
+    filterProducts();
 });
